@@ -34,7 +34,7 @@ header {
 header .header-content {
   width: 90%;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +55,7 @@ header .header-content .main-responsive {
 }
 
 header .header-content .main-responsive i {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   display: block;
   color: white;
 }
@@ -70,8 +70,8 @@ header .header-content .main {
   border-radius: 10px;
   -webkit-box-shadow: 0px 11px 25px 3px #474747;
           box-shadow: 0px 11px 25px 3px #474747;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .show-main {
@@ -184,7 +184,7 @@ header .header-hero .content-header-hero p {
   font-family: 'Overpass', sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 header .header-hero .content-header-hero .buttons-hero {
@@ -197,7 +197,7 @@ header .header-hero .content-header-hero .buttons-hero {
 }
 
 header .header-hero .content-header-hero .buttons-hero button {
-  padding: 12px 19px;
+  padding: 12px 12px;
   border-radius: 30px;
   outline: none;
   border: none;
@@ -227,7 +227,7 @@ header .header-hero .content-header-hero .buttons-hero button.more {
 
 .sections .section-one .content-section-one h2 {
   font-family: 'Overpass', sans-serif;
-  color: #4b5862;
+  color: #2c2d3f;
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 30px;
@@ -248,8 +248,13 @@ header .header-hero .content-header-hero .buttons-hero button.more {
   margin-bottom: 30px;
 }
 
+.sections .section-one .content-section-one .section-one-flex .img-flex img.desktop,
+.section-three .content-section-three .img-flex img.desktop {
+  display: none;
+}
+
 .sections .section-one .content-section-one .section-one-flex .text-flex h2 {
-  color: #4b5862;
+  color: #2c2d3f;
   font-size: 1.6rem;
   font-weight: 600;
   font-family: 'Overpass', sans-serif;
@@ -362,7 +367,7 @@ header .header-hero .content-header-hero .buttons-hero button.more {
 }
 
 .section-three .content-section-three .text-flex h2 {
-  color: #4b5862;
+  color: #2c2d3f;
   font-size: 1.6rem;
   font-weight: 600;
   font-family: 'Overpass', sans-serif;
@@ -427,5 +432,291 @@ footer .content-footer .main-footer .connect ul li a {
   color: #c8c8cb;
   text-decoration: none;
   font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: #FAFAFA;
+  }
+  header {
+    height: 500px;
+    margin-bottom: 0;
+    background-size: 200%;
+    background-position: 17% 50%;
+  }
+  header .header-content {
+    width: 80%;
+    height: 80px;
+  }
+  header .header-content .logo img {
+    width: 80px;
+  }
+  header .header-content .main-responsive {
+    display: none;
+  }
+  header .header-content .main {
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+    position: relative;
+    margin-top: 138px;
+  }
+  header .header-content .main .main-content {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  header .header-content .main .main-content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-content .main .main-content ul li.item a {
+    color: white;
+    padding-right: 5px;
+  }
+  header .header-content .main .main-content ul li.item a.color-desktop {
+    color: white;
+  }
+  header .header-content .main .main-content ul li.item a:focus {
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  header .header-content .main .main-content ul .arrow {
+    -webkit-filter: grayscale(100%) brightness(200%);
+            filter: grayscale(100%) brightness(200%);
+  }
+  header .header-content .main .main-content ul li.item {
+    padding-right: 50px;
+  }
+  header .header-content .log-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: -9px;
+  }
+  header .header-content .log-in button {
+    padding: 11px;
+    color: white;
+    line-height: 1.1rem;
+  }
+  header .header-content .log-in .button-end {
+    margin: 0;
+    background: white;
+    color: #ff525d;
+    padding-top: 14px;
+  }
+  header .header-content .log-in .button-end:hover {
+    background: #ff7a85;
+    color: white;
+  }
+  header .header-content .main .main-content ul li.item ul {
+    padding: 23px 34px 1px 15px;
+    background: white;
+  }
+  header .header-content .main .main-content ul li.item ul li a {
+    color: #4b5862;
+  }
+  header .header-content .main .main-content ul li.item ul.show-submenu {
+    margin-right: -71px;
+    text-align: left;
+  }
+  header .header-content .main .main-content ul li.item ul li a:hover {
+    color: black;
+  }
+  header .header-hero .content-header-hero h1 {
+    font-size: 3rem;
+  }
+  header .header-hero .content-header-hero h1 br {
+    display: none;
+  }
+  header .header-hero .content-header-hero p {
+    font-size: 1.1rem;
+  }
+  header .header-hero .content-header-hero p br {
+    display: none;
+  }
+  header .header-hero .content-header-hero .buttons-hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header-hero .content-header-hero .buttons-hero button.free:hover {
+    background: #ff7a85;
+    color: white;
+  }
+  header .header-hero .content-header-hero .buttons-hero button.more:hover {
+    background: white;
+    color: #ff525d;
+  }
+  .sections {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .sections .section-one .content-section-one {
+    width: 80%;
+    margin: 100px auto -90px auto;
+  }
+  .sections .section-one .content-section-one h2 {
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+  }
+  .sections .section-one .content-section-one .section-one-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .sections .section-one .content-section-one .section-one-flex .img-flex {
+    width: 50%;
+  }
+  .sections .section-one .content-section-one .section-one-flex .img-flex img.mobile,
+  .section-three .content-section-three .img-flex img.mobile {
+    display: none;
+  }
+  .sections .section-one .content-section-one .section-one-flex .img-flex img.desktop {
+    display: block;
+    width: 820px;
+    height: 720px;
+    position: absolute;
+    right: -243px;
+    top: 40px;
+    z-index: 9999;
+  }
+  .sections .section-one .content-section-one .section-one-flex .text-flex {
+    width: 50%;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .sections .section-one .content-section-one .section-one-flex .text-flex h2 {
+    font-size: 1.5rem;
+  }
+  .sections .section-one .content-section-one .section-one-flex .text-flex h2 br {
+    display: none;
+  }
+  .sections .section-one .content-section-one .section-one-flex .text-flex p {
+    margin-bottom: 50px;
+  }
+  .section-two {
+    background-position: -54% -390px;
+    background-size: 70%;
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+  }
+  .sections .section-two .content-section-two {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sections .section-two .content-section-two .img-flex {
+    width: 40%;
+  }
+  .sections .section-two .content-section-two .img-flex img {
+    position: initial;
+    margin-top: 30px;
+    width: 390px;
+    height: 420px;
+    margin-left: -82px;
+  }
+  .sections .section-two .content-section-two .text-flex {
+    width: 60%;
+    position: initial;
+    text-align: left;
+    margin-left: 50px;
+  }
+  .sections .section-two .content-section-two .text-flex h2 {
+    font-size: 1.7rem;
+  }
+  .sections .section-two .content-section-two .text-flex h2 br {
+    display: none;
+  }
+  .sections .section-three .content-section-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    height: 700px;
+  }
+  .sections .section-three .content-section-three .img-flex {
+    margin-right: -10px;
+  }
+  .sections .section-three .content-section-three .img-flex img.desktop {
+    display: block;
+    position: absolute;
+    left: -358px;
+    width: 790px;
+    height: 690px;
+    top: 0px;
+  }
+  .sections .section-three .content-section-three .text-flex {
+    width: 58%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: -20px;
+  }
+  .sections .section-three .content-section-three .text-flex p {
+    margin-bottom: 60px;
+  }
+  footer .content-footer {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+  }
+  footer .content-footer h2 {
+    float: left;
+  }
+  footer .content-footer .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer .content-footer .main-footer li {
+    list-style: none;
+  }
+  footer .content-footer .main-footer li a:hover {
+    border-bottom: 1px solid white;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
